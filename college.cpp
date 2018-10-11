@@ -1,8 +1,7 @@
-/************************************
-This file defines the class college. 
-College
-************************************/
-/** @file */
+/** @file college.cpp
+*@author Matthew Wagner
+*@date Oct 11, 2018
+*@brief This file defines the class college*/
 
 
 
@@ -54,7 +53,7 @@ node* college::get_head()const
 {
     return head;
 }
-
+///This function loads a previously saved college list.
 void college::load(std::istream& ins)
 {
     node* temp = head;
@@ -68,6 +67,7 @@ void college::load(std::istream& ins)
     }
     return;
 }
+/**This function saves the newly editted linked list to a file containing the users name.*/
 void college::save(std::ostream& outs)
 {
     outs<<name;

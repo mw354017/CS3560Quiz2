@@ -14,9 +14,8 @@ college.o: college.cpp college.h
 course.o: course.cpp course.h
 	g++ -c course.cpp
 
-doczip: collegemain.cpp college.cpp course.cpp
-	cd ..
-	tar -cvf college.tar CS3560Quiz2/
+doczip: $(/html /latex)
+	tar -cvf collegedoxy.tar html latex
 
 myexe: all
 	./myexe

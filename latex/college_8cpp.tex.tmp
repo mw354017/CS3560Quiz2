@@ -1,0 +1,28 @@
+\hypertarget{college_8cpp}{}\section{college.\+cpp File Reference}
+\label{college_8cpp}\index{college.\+cpp@{college.\+cpp}}
+
+
+This file defines the class college.  
+
+
+{\ttfamily \#include \char`\"{}college.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}course.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}node.\+h\char`\"{}}\newline
+Include dependency graph for college.\+cpp\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+This file defines the class college. 
+
+This file defines the class course.
+
+\begin{DoxyAuthor}{Author}
+Matthew Wagner 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Oct 11, 2018 
+\end{DoxyDate}

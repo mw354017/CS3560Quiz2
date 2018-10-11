@@ -1,8 +1,8 @@
-/***********************************************************************
-	The implementation file for course.h, which describes a college
-	course.
-		John Dolan		School of EECS		Summer2013
-**************************************************************************/
+/** @file college.cpp
+*@author Matthew Wagner
+*@date Oct 11, 2018
+*@brief This file defines the class course.*/
+
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
@@ -13,7 +13,7 @@ using namespace std;
 course::course(){
     hours = 0.0;
 }
-
+///This function allows the user to input a new course into their college list
 void course::input(std::istream& ins){
     if(&ins == &cin){
 	cout<<"Course Number: ";
@@ -52,7 +52,7 @@ void course::output(std::ostream& outs)const{
       }
 }
 
-
+///this function returns the Grade points of a course based on the letter grade input.
 double course::get_number_grade()const{
     if(grade == "A") return 4.0;
     if(grade == "A-") return 3.667;
@@ -68,7 +68,7 @@ double course::get_number_grade()const{
     if(grade == "F") return 0.0;
     else return 0;
 }
-
+/** @param [in]*/
 void course::set_course(std::string num, std::string grad, double hrs){
 	course_number = num;
 	grade = grad;
